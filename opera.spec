@@ -1,4 +1,5 @@
-%define     code 1039
+%define     code 1042
+%define     namecode animate
 
 Summary:	Web Browser for Linux
 Name:		opera-next
@@ -9,8 +10,8 @@ Epoch:		5
 Group:		Applications/Internet
 License:	Proprietary
 URL:		http://www.opera.com
-Source1:    http://snapshot.opera.com/unix/lejon_%{version}-%{code}/%{name}-%{version}-%{code}.i386.rpm
-Source0:    http://snapshot.opera.com/unix/lejon_%{version}-%{code}/%{name}-%{version}-%{code}.x86_64.rpm
+Source1:    http://snapshot.opera.com/unix/%{namecode}_%{version}-%{code}/%{name}-%{version}-%{code}.i386.rpm
+Source0:    http://snapshot.opera.com/unix/%{namecode}_%{version}-%{code}/%{name}-%{version}-%{code}.x86_64.rpm
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{code}-%{release}-root-%(%{__id_u} -n)
 
 BuildRequires:	desktop-file-utils
@@ -122,6 +123,9 @@ rm -rf %{buildroot}
 
 
 %changelog
+* Sat Aug 06 2011 Vasiliy N. Glazov <vascom2@gmail.com> - 5:12.00.1042-1.R
+- update to 12.00.1042
+
 * Thu Aug 04 2011 Vasiliy N. Glazov <vascom2@gmail.com> - 5:12.00.1039-1.R
 - update to 12.00.1039
 
