@@ -1,5 +1,5 @@
-%define     code 1054
-%define     namecode twelvereturns
+%define     code 1060
+%define     namecode extending
 
 Summary:	Web Browser for Linux
 Name:		opera-next
@@ -123,6 +123,9 @@ rm -rf %{buildroot}
 
 
 %changelog
+* Fri Sep 09 2011 Vasiliy N. Glazov <vascom2@gmail.com> - 5:12.00.1060-1.R
+- update to 12.00.1060
+
 * Tue Sep 02 2011 Vasiliy N. Glazov <vascom2@gmail.com> - 5:12.00.1054-1.R
 - update to 12.00.1054
 
