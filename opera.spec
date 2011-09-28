@@ -4,7 +4,7 @@
 Summary:	Web Browser for Linux
 Name:		opera-next
 Version:	12.00
-Release:	%{code}.2.R
+Release:	%{code}.1.R
 Epoch:		5
 
 Group:		Applications/Internet
