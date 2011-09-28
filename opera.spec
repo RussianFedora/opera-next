@@ -4,7 +4,7 @@
 Summary:	Web Browser for Linux
 Name:		opera-next
 Version:	12.00
-Release:	%{code}.1.R
+Release:	%{code}.2.R
 Epoch:		5
 
 Group:		Applications/Internet
@@ -29,7 +29,7 @@ offers you the best Internet experience.
 %package	pluginwrapper
 Summary:	32bit wrapper for 64bit browser
 Group:		Applications/Internet
-Requires:	%{name} = %{epoch}:%{version}-%{code}-%{release}
+Requires:	%{name} = %{epoch}:%{version}-%{release}
 
 
 %description pluginwrapper
@@ -128,6 +128,7 @@ rm -rf %{buildroot}
 
 * Wed Sep 14 2011 Vasiliy N. Glazov <vascom2@gmail.com> - 5:12.00.1065-1.R
 - update to 12.00.1065
+- corrected requires for 
 
 * Fri Sep 09 2011 Vasiliy N. Glazov <vascom2@gmail.com> - 5:12.00.1060-1.R
 - update to 12.00.1060
