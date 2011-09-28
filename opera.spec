@@ -1,5 +1,5 @@
-%define     code 1065
-%define     namecode coffeecode
+%define     code 1076
+%define     namecode turret
 
 Summary:	Web Browser for Linux
 Name:		opera-next
@@ -123,6 +123,9 @@ rm -rf %{buildroot}
 
 
 %changelog
+* Wed Sep 28 2011 Vasiliy N. Glazov <vascom2@gmail.com> - 5:12.00.1076-1.R
+- update to 12.00.1076
+
 * Wed Sep 14 2011 Vasiliy N. Glazov <vascom2@gmail.com> - 5:12.00.1065-1.R
 - update to 12.00.1065
 
