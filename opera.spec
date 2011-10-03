@@ -63,7 +63,7 @@ desktop-file-install --vendor rfremix \
   --add-category WebBrowser \
   --add-category X-Fedora \
   --delete-original \
-  %{buildroot}%{_datadir}/applications/opera-next-browser.desktop
+  %{buildroot}%{_datadir}/applications/%{name}-browser.desktop
 
 # we do not need these files as default license is present
 rm -f %{buildroot}%{_datadir}/%{name}/locale/*/license.txt
@@ -105,14 +105,15 @@ rm -rf %{buildroot}
 
 %files
 %defattr(-, root, root)
-%doc %{_datadir}/doc/%{name}-%{version}/*
+%doc %{_datadir}/doc/%{name}-%{version}
 %{_bindir}/%{name}*
-%{_libdir}/opera-next/*
-%{_datadir}/opera-next/*
+%{_libdir}/%{name}
+%{_datadir}/%{name}
 %{_mandir}/man?/*
 %{_datadir}/icons/*
 %{_datadir}/mime/*
 %{_datadir}/applications/*.desktop
+
 %ifarch x86_64
 %exclude %{_libdir}/%{name}/operapluginwrapper-ia32-linux
 
