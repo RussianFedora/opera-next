@@ -1,5 +1,5 @@
-%define     code 1090
-%define     namecode feathers
+%define     code 1116
+%define     namecode quack
 
 Summary:    Web Browser for Linux
 Name:       opera-next
@@ -123,6 +123,9 @@ rm -rf %{buildroot}
 
 
 %changelog
+* Mon Nov 14 2011 Vasiliy N. Glazov <vascom2@gmail.com> - 5:12.00.1116-1.R
+- update to 12.00.1116
+
 * Tue Oct 11 2011 Vasiliy N. Glazov <vascom2@gmail.com> - 5:12.00.1090-1.R
 - update to 12.00.1090
 
