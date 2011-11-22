@@ -1,10 +1,11 @@
-%define     code 1116
-%define     namecode quack
+%define     code 1155
+%define     namecode hwa
 
-Summary:    Web Browser for Linux
 Name:       opera-next
 Version:    12.00
 Release:    %{code}.1.R
+Summary:    Web Browser for Linux
+Summary(ru):Веб-браузер для Linux
 Epoch:      5
 
 Group:      Applications/Internet
@@ -24,15 +25,31 @@ desktop domination, and instability.  This robust Web
 browser lets you navigate the Web at incredible speed and
 offers you the best Internet experience.
 
+%description -l ru
+Добро пожаловать в веб-браузер Opera. Opera отличается малыми
+размерами, скоростью загрузки HTML документов как из Интернета,
+так и с локального диска, универсальностью в загрузке и
+отображении веб-страниц, богатством настроек и абсолютной
+функциональностью. Благодаря многообразию своих настроек,
+Opera может помочь вам сберечь драгоценное онлайновое время
+и работать с вашим компьютером наиболее эффективно, то есть
+использовать Opera как профессиональный броузер, управляя выводом
+графических изображений, использованием каскадных таблиц стилей и
+интерфейсом.
+
 %ifarch x86_64
 %package    pluginwrapper
 Summary:    32bit wrapper for 64bit browser
+Summary:    32бит обёртка для 64bit версии браузера
 Group:      Applications/Internet
 Requires:   %{name} = %{epoch}:%{version}-%{release}
 
 
 %description pluginwrapper
 This package contains 32bit wrapper for 64bit browser
+
+%description pluginwrapper -l ru
+Этот пакет содержит 32бит обёртку для 64bit версии браузера
 %endif
 
 
@@ -123,6 +140,10 @@ rm -rf %{buildroot}
 
 
 %changelog
+* Tue Nov 22 2011 Vasiliy N. Glazov <vascom2@gmail.com> - 5:12.00.1155-1.R
+- Added description in russian language
+- Update to 12.00.1155
+
 * Mon Nov 14 2011 Vasiliy N. Glazov <vascom2@gmail.com> - 5:12.00.1116-1.R
 - update to 12.00.1116
 
