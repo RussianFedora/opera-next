@@ -59,7 +59,7 @@ This package contains 32bit wrapper for 64bit browser
 
 
 %build
-
+cp %{SOURCE100} .
 
 %install
 rm -rf %{buildroot}
