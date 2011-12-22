@@ -13,7 +13,7 @@ License:    Proprietary
 URL:        http://www.opera.com
 Source1:    http://snapshot.opera.com/unix/%{namecode}_%{version}-%{code}/%{name}-%{version}-%{code}.i386.rpm
 Source0:    http://snapshot.opera.com/unix/%{namecode}_%{version}-%{code}/%{name}-%{version}-%{code}.x86_64.rpm
-Source2:    README.RFRemix
+Source100:  README.RFRemix
 
 BuildRequires:  desktop-file-utils
 
@@ -123,7 +123,7 @@ rm -rf %{buildroot}
 %files
 %defattr(-, root, root)
 %doc %{_datadir}/doc/%{name}-%{version}
-%doc %{SOURCE2}
+%doc README.RFRemix
 %{_bindir}/%{name}*
 %{_libdir}/%{name}
 %{_datadir}/%{name}
