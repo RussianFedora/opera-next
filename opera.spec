@@ -1,4 +1,4 @@
-%define     code 1155
+%define     code 1213
 %define     namecode hwa
 
 Name:       opera-next
@@ -13,6 +13,7 @@ License:    Proprietary
 URL:        http://www.opera.com
 Source1:    http://snapshot.opera.com/unix/%{namecode}_%{version}-%{code}/%{name}-%{version}-%{code}.i386.rpm
 Source0:    http://snapshot.opera.com/unix/%{namecode}_%{version}-%{code}/%{name}-%{version}-%{code}.x86_64.rpm
+Source2:    README.RFRemix
 
 BuildRequires:  desktop-file-utils
 
@@ -40,7 +41,7 @@ Opera может помочь вам сберечь драгоценное он�
 %ifarch x86_64
 %package    pluginwrapper
 Summary:    32bit wrapper for 64bit browser
-Summary:    32бит обёртка для 64bit версии браузера
+Summary(ru):32бит обёртка для 64bit версии браузера
 Group:      Applications/Internet
 Requires:   %{name} = %{epoch}:%{version}-%{release}
 
@@ -90,9 +91,9 @@ cp %{buildroot}%{_datadir}/doc/%{name}-%{version}/LICENSE \
 	%{buildroot}%{_datadir}/%{name}/defaults/license.txt
 
 # unkhardlink
-rm %{buildroot}%{_datadir}/%{name}/locale/zh-tw/browser.js
-cp %{buildroot}%{_datadir}/%{name}/locale/zh-cn/browser.js \
-	%{buildroot}%{_datadir}/%{name}/locale/zh-tw/browser.js
+# rm %{buildroot}%{_datadir}/%{name}/locale/zh-tw/browser.js
+# cp %{buildroot}%{_datadir}/%{name}/locale/zh-cn/browser.js \
+#     %{buildroot}%{_datadir}/%{name}/locale/zh-tw/browser.js
 
 
 %post
@@ -122,6 +123,7 @@ rm -rf %{buildroot}
 %files
 %defattr(-, root, root)
 %doc %{_datadir}/doc/%{name}-%{version}
+%doc %{SOURCE2}
 %{_bindir}/%{name}*
 %{_libdir}/%{name}
 %{_datadir}/%{name}
@@ -140,6 +142,9 @@ rm -rf %{buildroot}
 
 
 %changelog
+* Thu Dec 22 2011 Vasiliy N. Glazov <vascom2@gmail.com> - 5:12.00.1213-1.R
+- Update to 12.00.1213
+
 * Tue Nov 22 2011 Vasiliy N. Glazov <vascom2@gmail.com> - 5:12.00.1155-1.R
 - Added description in russian language
 - Update to 12.00.1155
