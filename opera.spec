@@ -1,5 +1,5 @@
-%define     code 1213
-%define     namecode hwa
+%define     code 1312
+%define     namecode torsdag2
 
 Name:       opera-next
 Version:    12.00
@@ -142,6 +142,9 @@ rm -rf %{buildroot}
 
 
 %changelog
+* Sat Feb 25 2012 Vasiliy N. Glazov <vascom2@gmail.com> - 5:12.00.1312-1.R
+- Update to 12.00.1312
+
 * Thu Dec 22 2011 Vasiliy N. Glazov <vascom2@gmail.com> - 5:12.00.1213-1.R
 - Update to 12.00.1213
 
