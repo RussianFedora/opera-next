@@ -1,5 +1,5 @@
-%define     code 1312
-%define     namecode torsdag2
+%define     code 1372
+%define     namecode smile
 
 Name:       opera-next
 Version:    12.00
@@ -57,7 +57,7 @@ This package contains 32bit wrapper for 64bit browser
 %prep
 %setup -q -c -T
 
-
+ 
 %build
 cp %{SOURCE100} .
 
@@ -142,6 +142,9 @@ rm -rf %{buildroot}
 
 
 %changelog
+* Wed Apr 18 2012 Vasiliy N. Glazov <vascom2@gmail.com> - 5:12.00.1372-1.R
+- Update to 12.00.1372
+
 * Sat Feb 25 2012 Vasiliy N. Glazov <vascom2@gmail.com> - 5:12.00.1312-1.R
 - Update to 12.00.1312
 
