@@ -1,9 +1,9 @@
-%define     code 1372
-%define     namecode smile
+%define     code 1387
+%define     namecode maybeta
 
 Name:       opera-next
 Version:    12.00
-Release:    %{code}.1.R
+Release:    %{code}.1%{?dist}
 Summary:    Web Browser for Linux
 Summary(ru):Веб-браузер для Linux
 Epoch:      5
@@ -41,7 +41,7 @@ Opera может помочь вам сберечь драгоценное он�
 %ifarch x86_64
 %package    pluginwrapper
 Summary:    32bit wrapper for 64bit browser
-Summary(ru):32бит обёртка для 64bit версии браузера
+Summary(ru):32бит обёртка для 64бит версии браузера
 Group:      Applications/Internet
 Requires:   %{name} = %{epoch}:%{version}-%{release}
 
@@ -50,7 +50,7 @@ Requires:   %{name} = %{epoch}:%{version}-%{release}
 This package contains 32bit wrapper for 64bit browser
 
 %description pluginwrapper -l ru
-Этот пакет содержит 32бит обёртку для 64bit версии браузера
+Этот пакет содержит 32бит обёртку для 64бит версии браузера
 %endif
 
 
@@ -142,6 +142,9 @@ rm -rf %{buildroot}
 
 
 %changelog
+* Thu May 10 2012 Vasiliy N. Glazov <vascom2@gmail.com> - 5:12.00.1387-1.R
+- Update to 12.00.1387
+
 * Wed Apr 18 2012 Vasiliy N. Glazov <vascom2@gmail.com> - 5:12.00.1372-1.R
 - Update to 12.00.1372
 
