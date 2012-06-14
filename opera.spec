@@ -1,5 +1,5 @@
-%define     code 1387
-%define     namecode maybeta
+%define     code 1467
+%define     namecode next5
 
 Name:       opera-next
 Version:    12.00
@@ -142,6 +142,9 @@ rm -rf %{buildroot}
 
 
 %changelog
+* Thu Jun 14 2012 Vasiliy N. Glazov <vascom2@gmail.com> - 5:12.00.1467-1.R
+- Update to 12.00.1467
+
 * Thu May 10 2012 Vasiliy N. Glazov <vascom2@gmail.com> - 5:12.00.1387-1.R
 - Update to 12.00.1387
 
