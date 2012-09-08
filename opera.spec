@@ -1,8 +1,8 @@
-%define     code 1467
-%define     namecode next5
+%define     code 1583
+%define     namecode 32633
 
 Name:       opera-next
-Version:    12.00
+Version:    12.50
 Release:    %{code}.1%{?dist}
 Summary:    Web Browser for Linux
 Summary(ru):Веб-браузер для Linux
@@ -13,7 +13,6 @@ License:    Proprietary
 URL:        http://www.opera.com
 Source1:    http://snapshot.opera.com/unix/%{namecode}_%{version}-%{code}/%{name}-%{version}-%{code}.i386.rpm
 Source0:    http://snapshot.opera.com/unix/%{namecode}_%{version}-%{code}/%{name}-%{version}-%{code}.x86_64.rpm
-Source100:  README.RFRemix
 
 BuildRequires:  desktop-file-utils
 
@@ -57,9 +56,6 @@ This package contains 32bit wrapper for 64bit browser
 %prep
 %setup -q -c -T
 
- 
-%build
-cp %{SOURCE100} .
 
 %install
 rm -rf %{buildroot}
@@ -116,14 +112,8 @@ update-desktop-database &> /dev/null || :
 gtk-update-icon-cache /usr/share/icons/hicolor &>/dev/null || :
 
 
-%clean
-rm -rf %{buildroot}
-
-
 %files
-%defattr(-, root, root)
 %doc %{_datadir}/doc/%{name}-%{version}
-%doc README.RFRemix
 %{_bindir}/%{name}*
 %{_libdir}/%{name}
 %{_datadir}/%{name}
@@ -136,12 +126,14 @@ rm -rf %{buildroot}
 %exclude %{_libdir}/%{name}/pluginwrapper/operapluginwrapper-ia32-linux
 
 %files pluginwrapper
-%defattr(-, root, root)
 %{_libdir}/%{name}/pluginwrapper/operapluginwrapper-ia32-linux
 %endif
 
 
 %changelog
+* Sat Sep 08 2012 Vasiliy N. Glazov <vascom2@gmail.com> - 5:12.50.1583-1.R
+- Update to 12.50.1583
+
 * Thu Jun 14 2012 Vasiliy N. Glazov <vascom2@gmail.com> - 5:12.00.1467-1.R
 - Update to 12.00.1467
 
